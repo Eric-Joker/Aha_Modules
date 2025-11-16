@@ -1,0 +1,8 @@
+
+auto_restart: "%s 离线，自动重启中..."
+config_comment.servers: |
+  键为 bots 配置中适配器实例索引，值为后备适配器实例列表。
+  每项适配器（包括 bots 中的）新增 _failover_cron 配置，计划启动服务30秒后关闭；bool 为 false 时不启动。
+config_comment.timeout: "适配器实例启动超时时间，单位秒。"
+rotate.start: "%s 重启失败，轮转至备用适配器实例..."
+server_restore: "%s 服务恢复！"

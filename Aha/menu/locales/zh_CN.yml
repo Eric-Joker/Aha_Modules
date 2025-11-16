@@ -1,0 +1,7 @@
+help_with_prefix: 帮助|功能|指令
+help: 菜单
+menu.head: 已有功能：
+menu.line_with_desc: "%s - %s"
+menu.line: "%s"
+menu.join: "\n"
+menu.tail: "发送【%s功能】获取详细信息"

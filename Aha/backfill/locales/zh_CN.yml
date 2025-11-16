@@ -1,0 +1,4 @@
+config_comment.count: 每群组、每 bot 与用户组合抓取多少条历史消息。
+config_comment.seconds: 回填消息的范围，单位秒。
+not_available_callback: "未被 Aha 事件回调装饰器注册，无法支持回填。"
+unavailable: cache_conv 未启用，backfill 不可用。

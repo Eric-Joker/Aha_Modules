@@ -1,0 +1,4 @@
+config_comment.count: How many historical messages to fetch per group, per bot and user combination.
+config_comment.seconds: The range for backfilling messages, in seconds.
+not_available_callback: "Not registered with Aha event callback decorator, unable to support backfill."
+unavailable: "`cache_conv` is not enabled, backfill is not available."

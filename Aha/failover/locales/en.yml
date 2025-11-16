@@ -1,0 +1,7 @@
+auto_restart: "%s is offline, restarting..."
+config_comment.servers: |
+  Key is the adapter instance index in the `bots`, and value is the list of backup adapter instances.
+  For each adapter (including those in `bots`), `_failover_cron` config is added, which shuts down 30 seconds after scheduled startup; if false, it will not start.
+config_comment.timeout: "Adapter startup timeout, in seconds."
+rotate.start: "%s failed to restart, rotating to the backup adapter instance..."
+server_restore: "%s Restore!"
