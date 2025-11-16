@@ -1,0 +1,17 @@
+appointment: 预约
+appointment.desc: 定时触发机器人指令
+appointment.help: |-
+  [预约/延迟/延时(触发) 时间段 指令]
+  [取消预约] - 取消所有预约，返还一半能量
+  
+  消耗1点能量，每存在1个预约多消耗1点，定时触发机器人指令
+  温馨提示：
+  - 尽管设定的指令实际上没有任何效果，能量也不返还
+  - 每个用户1分钟内最多触发3次指令，超过的会被丢弃，能量不返还
+appointment.command: '((?:延迟|延时|预约)(?:触发)?\s*(\S+)\s+)(\S+[\s\S]*)'
+appointment.identification_failed: 无法识别为时间段
+appointment.insufficient_funds: "余额不足，需要%s点能量，你当前有%s点。"
+appointment.success: "消耗%(point)s点能量，将在%(time)s触发“%(command)s”"
+appointment.cancel: '取消(?:延迟|延时|预约)(?:触发)?'
+appointment.cancel.success: "已取消%s个预约，返还%s点能量。"
+appointment.cancel.success.admin: "已取消%s个预约。"
