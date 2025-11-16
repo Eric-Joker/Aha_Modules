@@ -1,0 +1,7 @@
+help_with_prefix: help
+help:
+menu.head: Existing features
+menu.line_with_desc: "%s - %s"
+menu.line: "%s"
+menu.join: "\n"
+menu.tail: "Send [%sfeature] to get detailed information."

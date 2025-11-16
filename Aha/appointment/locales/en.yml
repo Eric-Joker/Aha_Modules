@@ -1,0 +1,16 @@
+appointment: appointment
+appointment.desc: Schedule command
+appointment.help: |-
+  [appointment/schedule/delay/trigger TimeSlot Command]
+  [Cancel Schedules] - Cancels all scheduled tasks, refunds half energy
+  
+  Consumes 1 energy point; each active schedule consumes an additional 1 point. Triggers robot commands at set intervals.
+  Notes:
+  - Although the set commands have no actual effect, energy is not refunded.
+  - Each user may trigger commands up to 3 times per minute. Excess commands are discarded without energy refund.
+appointment.command: '((?:appointment|schedule|delay|trigger)\s*(\S+)\s+)(\S+[\s\S]*)'
+appointment.identification_failed: Cannot be recognized as a time period
+appointment.insufficient_funds: Consumes %(point)s energy, will trigger \"%(command)s\" in %(time)s.
+appointment.cancel: 'Cancel (?:Appointment|schedule|delay|trigger)'
+appointment.cancel.success: "%s appointments have been canceled, restoring %s energy points."
+appointment.cancel.success.admin: "%s appointments have been canceled."
